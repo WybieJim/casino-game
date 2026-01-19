@@ -49,9 +49,13 @@ casino_app/
 
 3. **运行开发版本**
    ```bash
-   flutter run
+   flutter run -d chrome --web-port port
    ```
-   连接Android设备或启动模拟器查看效果。
+   连接到chrome查看下载网页；
+   ```bash
+   flutter run -d linux
+   ```
+   linux桌面启动模拟器查看效果。
 
 ### 构建Android APK
 
