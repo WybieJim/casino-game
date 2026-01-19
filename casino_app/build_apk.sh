@@ -7,9 +7,14 @@ set -e
 
 echo "开始构建Android APK..."
 
+# 设置Android SDK路径
+export ANDROID_HOME=/home/wybie/Android/sdk
+export JAVA_HOME=/usr/lib/jvm/jdk-17.0.12
+export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$PATH
+
 # 设置Flutter中国镜像（如果需要）
-# export PUB_HOSTED_URL=https://pub.flutter-io.cn
-# export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
 # 检查Flutter是否可用
 if ! command -v flutter &> /dev/null; then

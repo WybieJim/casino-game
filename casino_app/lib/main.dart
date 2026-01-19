@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:casino_app/game_screen.dart';
+import 'package:casino_app/home_screen.dart';
 
 void main() {
   runApp(const CasinoApp());
@@ -16,7 +16,7 @@ class CasinoApp extends StatelessWidget {
         primarySwatch: Colors.green,
         useMaterial3: true,
       ),
-      home: const GameScreen(),
+      home: const HomeScreen(),
     );
   }
 }
